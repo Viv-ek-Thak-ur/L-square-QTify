@@ -1,0 +1,191 @@
+[
+  {
+    "id": "101",
+    "title": "Skyline",
+    "image": "#FF8C00",
+    "likes": 9000,
+    "durationInSeconds": 210,
+    "slug": "skyline",
+    "artists": ["Ava Max"]
+  },
+  {
+    "id": "102",
+    "title": "Gravity",
+    "image": "#20B2AA",
+    "likes": 7500,
+    "durationInSeconds": 185,
+    "slug": "gravity",
+    "artists": ["James Blake"]
+  },
+  {
+    "id": "103",
+    "title": "Electric Love",
+    "image": "#9370DB",
+    "likes": 6400,
+    "durationInSeconds": 195,
+    "slug": "electric-love",
+    "artists": ["BØRNS"]
+  },
+  {
+    "id": "104",
+    "title": "Sunset Drive",
+    "image": "#00CED1",
+    "likes": 7800,
+    "durationInSeconds": 200,
+    "slug": "sunset-drive",
+    "artists": ["LANY"]
+  },
+  {
+    "id": "105",
+    "title": "Moonlight",
+    "image": "#FF6347",
+    "likes": 5600,
+    "durationInSeconds": 178,
+    "slug": "moonlight",
+    "artists": ["XXXTentacion"]
+  },
+  {
+    "id": "106",
+    "title": "Indie Nights",
+    "image": "#4169E1",
+    "likes": 8700,
+    "durationInSeconds": 220,
+    "slug": "indie-nights",
+    "artists": ["The 1975"]
+  },
+  {
+    "id": "107",
+    "title": "Rainy Day",
+    "image": "#708090",
+    "likes": 7100,
+    "durationInSeconds": 190,
+    "slug": "rainy-day",
+    "artists": ["Billie Eilish"]
+  },
+  {
+    "id": "108",
+    "title": "Feel Good",
+    "image": "#7CFC00",
+    "likes": 9600,
+    "durationInSeconds": 205,
+    "slug": "feel-good",
+    "artists": ["Gorillaz"]
+  },
+  {
+    "id": "109",
+    "title": "Golden Hour",
+    "image": "#FFD700",
+    "likes": 9400,
+    "durationInSeconds": 230,
+    "slug": "golden-hour",
+    "artists": ["JVKE"]
+  },
+  {
+    "id": "110",
+    "title": "Starry Eyes",
+    "image": "#00BFFF",
+    "likes": 6800,
+    "durationInSeconds": 176,
+    "slug": "starry-eyes",
+    "artists": ["Young the Giant"]
+  },
+  {
+    "id": "111",
+    "title": "After Dark",
+    "image": "#2F4F4F",
+    "likes": 5200,
+    "durationInSeconds": 190,
+    "slug": "after-dark",
+    "artists": ["Mr.Kitty"]
+  },
+  {
+    "id": "112",
+    "title": "Neon Lights",
+    "image": "#FF00FF",
+    "likes": 8800,
+    "durationInSeconds": 210,
+    "slug": "neon-lights",
+    "artists": ["Demi Lovato"]
+  },
+  {
+    "id": "113",
+    "title": "Into You",
+    "image": "#B0C4DE",
+    "likes": 7400,
+    "durationInSeconds": 175,
+    "slug": "into-you",
+    "artists": ["Ariana Grande"]
+  },
+  {
+    "id": "114",
+    "title": "Mirage",
+    "image": "#40E0D0",
+    "likes": 5100,
+    "durationInSeconds": 185,
+    "slug": "mirage",
+    "artists": ["Else"]
+  },
+  {
+    "id": "115",
+    "title": "Heat Waves",
+    "image": "#FA8072",
+    "likes": 9300,
+    "durationInSeconds": 202,
+    "slug": "heat-waves",
+    "artists": ["Glass Animals"]
+  },
+  {
+    "id": "116",
+    "title": "Shivers",
+    "image": "#BA55D3",
+    "likes": 8200,
+    "durationInSeconds": 198,
+    "slug": "shivers",
+    "artists": ["Ed Sheeran"]
+  },
+  {
+    "id": "117",
+    "title": "Ghost",
+    "image": "#778899",
+    "likes": 6900,
+    "durationInSeconds": 180,
+    "slug": "ghost",
+    "artists": ["Justin Bieber"]
+  },
+  {
+    "id": "118",
+    "title": "On My Way",
+    "image": "#F08080",
+    "likes": 6100,
+    "durationInSeconds": 189,
+    "slug": "on-my-way",
+    "artists": ["Alan Walker"]
+  },
+  {
+    "id": "119",
+    "title": "Alone",
+    "image": "#6A5ACD",
+    "likes": 7900,
+    "durationInSeconds": 204,
+    "slug": "alone",
+    "artists": ["Marshmello"]
+  },
+  {
+    "id": "120",
+    "title": "Bloom",
+    "image": "#D8BFD8",
+    "likes": 8400,
+    "durationInSeconds": 212,
+    "slug": "bloom",
+    "artists": ["Troye Sivan"]
+  },
+  {
+    "id": "121",
+    "title": "Ocean Eyes",
+    "image": "#1E90FF",
+    "likes": 9100,
+    "durationInSeconds": 200,
+    "slug": "ocean-eyes",
+    "artists": ["Billie Eilish"]
+  }
+]

@@ -1,0 +1,33 @@
+.section {
+  padding: 24px 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.showAll {
+  background-color: transparent;
+  color: var(--color-primary, #34C94B);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 16px;
+  gap: 16px;
+  
+}

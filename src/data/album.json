@@ -1,0 +1,149 @@
+[
+  {
+    "id": "1",
+    "title": "Top Hits 2024",
+    "image": "#34C94B",
+    "follows": 10000,
+    "slug": "top-hits-2024"
+  },
+  {
+    "id": "2",
+    "title": "Chill Vibes",
+    "image": "#FF6F61",
+    "follows": 8500,
+    "slug": "chill-vibes"
+  },
+  {
+    "id": "3",
+    "title": "Workout Playlist",
+    "image": "#6A5ACD",
+    "follows": 12500,
+    "slug": "workout-playlist"
+  },
+  {
+    "id": "4",
+    "title": "Evening Jazz",
+    "image": "#DAA520",
+    "follows": 6200,
+    "slug": "evening-jazz"
+  },
+  {
+    "id": "5",
+    "title": "Classical Essentials",
+    "image": "#4682B4",
+    "follows": 4800,
+    "slug": "classical-essentials"
+  },
+  {
+    "id": "6",
+    "title": "Party Starters",
+    "image": "#FF69B4",
+    "follows": 10900,
+    "slug": "party-starters"
+  },
+  {
+    "id": "7",
+    "title": "Focus Flow",
+    "image": "#008080",
+    "follows": 5300,
+    "slug": "focus-flow"
+  },
+  {
+    "id": "8",
+    "title": "Bollywood Mix",
+    "image": "#FF4500",
+    "follows": 11800,
+    "slug": "bollywood-mix"
+  },
+  {
+    "id": "9",
+    "title": "Sunday Chill",
+    "image": "#B22222",
+    "follows": 5700,
+    "slug": "sunday-chill"
+  },
+  {
+    "id": "10",
+    "title": "Global EDM",
+    "image": "#5F9EA0",
+    "follows": 9600,
+    "slug": "global-edm"
+  },
+  {
+    "id": "11",
+    "title": "Romantic Hits",
+    "image": "#FFC0CB",
+    "follows": 7800,
+    "slug": "romantic-hits"
+  },
+  {
+    "id": "12",
+    "title": "Hip Hop Heat",
+    "image": "#8B0000",
+    "follows": 8900,
+    "slug": "hip-hop-heat"
+  },
+  {
+    "id": "13",
+    "title": "Acoustic Soul",
+    "image": "#7B68EE",
+    "follows": 6600,
+    "slug": "acoustic-soul"
+  },
+  {
+    "id": "14",
+    "title": "Road Trip Tunes",
+    "image": "#3CB371",
+    "follows": 9900,
+    "slug": "road-trip-tunes"
+  },
+  {
+    "id": "15",
+    "title": "Calm Instrumentals",
+    "image": "#20B2AA",
+    "follows": 4300,
+    "slug": "calm-instrumentals"
+  },
+  {
+    "id": "16",
+    "title": "90s Rewind",
+    "image": "#FF8C00",
+    "follows": 8600,
+    "slug": "90s-rewind"
+  },
+  {
+    "id": "17",
+    "title": "Festival Fever",
+    "image": "#DC143C",
+    "follows": 10200,
+    "slug": "festival-fever"
+  },
+  {
+    "id": "18",
+    "title": "RnB Nights",
+    "image": "#9932CC",
+    "follows": 7300,
+    "slug": "rnb-nights"
+  },
+  {
+    "id": "19",
+    "title": "Lo-fi Lounge",
+    "image": "#2E8B57",
+    "follows": 9200,
+    "slug": "lofi-lounge"
+  },
+  {
+    "id": "20",
+    "title": "Melodic Beats",
+    "image": "#1E90FF",
+    "follows": 6100,
+    "slug": "melodic-beats"
+  },
+  {
+    "id": "21",
+    "title": "Desi Pop",
+    "image": "#FF1493",
+    "follows": 10800,
+    "slug": "desi-pop"
+  }
+]
