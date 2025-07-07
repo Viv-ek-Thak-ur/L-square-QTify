@@ -1,6 +1,6 @@
 .section {
-  margin: 32px 0;
-  align-items: start;
+  margin: 24px 0;
+  padding: 0 16px;
 }
 
 .header {
@@ -8,8 +8,6 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
-  margin: 4px;
-  margin-left: 48px;
 }
 
 .grid {
@@ -18,32 +16,23 @@
   gap: 16px;
 }
 
-.carousel {
+.carouselWrapper {
+  position: relative;
   display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 12px;
-  padding: 10px 0;
-    scrollbar-width: none;         /* Firefox */
-  -ms-overflow-style: none;   
-}
-.carousel::-webkit-scrollbar {
-  display: none;                /* Chrome, Safari */
-}
-.cardGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 16px;
-  width: 100%;
-  
+  align-items: center;
+  gap: 8px;
 }
 
-.arrow {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
+.navArrow {
+  width: 32px;
+  height: 32px;
   cursor: pointer;
-  z-index: 2;
-  padding: 4px;
+  z-index: 10;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
