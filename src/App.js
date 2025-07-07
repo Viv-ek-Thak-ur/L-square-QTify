@@ -40,9 +40,9 @@ function App(){
       <Search/>
     </Navbar>
     <Hero/>
-    <AlbumSection title="Top Album" data={topAlbum}/>
-    <AlbumSection title="New Album" data={newAlbum}/>
-    <SongSection songsData={topAlbum}/>
+    {/* <AlbumSection title="Top Album" data={topAlbum}/> */}
+    {/* <AlbumSection title="New Album" data={newAlbum}/> */}
+    {/* <SongSection songsData={topAlbum}/> */}
     </BrowserRouter>
     </ThemeProvider>
     </>
