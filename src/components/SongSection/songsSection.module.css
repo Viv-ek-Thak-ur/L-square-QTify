@@ -1,0 +1,75 @@
+.songSection {
+  padding: 2rem;
+  background-color: #121212;
+  color: white;
+}
+
+.songSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.activeTab,
+.inactiveTab {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.activeTab {
+  background-color: #34c94b;
+  color: black;
+}
+
+.inactiveTab {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #34c94b;
+}
+
+.scrollWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow img {
+  height: 100%;
+  width: auto;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.cardContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

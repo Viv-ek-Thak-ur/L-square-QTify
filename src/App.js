@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter } from "react-router-dom";
 import AlbumCard from './components/AlbumCard/AlbumCard';
 import AlbumSection from './components/AlbumSection/AlbumSection';
+import SongSection from './components/SongSection/SongSection';
 import topAlbum from '../src/data/album.json'
 import newAlbum from '../src/data/songs.json'
 
@@ -39,8 +40,9 @@ function App(){
       <Search/>
     </Navbar>
     <Hero/>
-    {/* <AlbumSection title="Top Album" data={topAlbum}/> */}
-    {/* <AlbumSection title="New Album" data={newAlbum}/> */}
+    <AlbumSection title="Top Album" data={topAlbum}/>
+    <AlbumSection title="New Album" data={newAlbum}/>
+    <SongSection songsData={topAlbum}/>
     </BrowserRouter>
     </ThemeProvider>
     </>

@@ -1,7 +1,9 @@
 .card {
-  width: 100%;
+  flex: 0 0 auto;                     /* Prevents shrinking in scroll containers */
+  width: 40vw;                        /* Responsive width: 40% of viewport width */
   max-width: 200px;
-  aspect-ratio: 1 / 1;
+  min-width: 140px;
+  aspect-ratio: 4 / 5;
   border-radius: 12px;
   display: flex;
   align-items: flex-end;
@@ -12,8 +14,7 @@
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: red;
-  margin-left: 2px;
+  margin-left: 8px;                   /* Spacing between cards */
 }
 
 .card:hover {
@@ -36,10 +37,19 @@
   font-weight: 400;
 }
 
-/* Optional: responsive tweak */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .card {
-    max-width: 100%;
+    width: 60vw;
+    max-width: 180px;
     padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 80vw;
+    max-width: none;
+    min-width: 120px;
+    padding: 10px;
   }
 }
