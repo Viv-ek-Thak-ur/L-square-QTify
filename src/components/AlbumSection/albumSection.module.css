@@ -25,9 +25,12 @@
   scroll-behavior: smooth;
   gap: 12px;
   padding: 10px 0;
-  
+    scrollbar-width: none;         /* Firefox */
+  -ms-overflow-style: none;   
 }
-
+.carousel::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari */
+}
 .cardGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
