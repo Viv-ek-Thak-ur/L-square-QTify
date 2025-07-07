@@ -1,60 +1,30 @@
-import React, { useState, useRef } from "react";
-import styles from "./albumSection.module.css";
+import React, { useState } from "react";
 import AlbumCard from "../AlbumCard/AlbumCard";
-import { Button, useTheme } from "@mui/material";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import styles from "./albumSection.module.css";
+import { Button } from "@mui/material";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 function AlbumSection({ title, data }) {
   const [showAll, setShowAll] = useState(false);
-  const scrollRef = useRef(null);
-  const theme = useTheme();
-
-  const handleToggle = () => {
-    setShowAll((prev) => !prev);
-  };
-
-  const scroll = (direction) => {
-    const { current } = scrollRef;
-    if (current) {
-      const scrollAmount = direction === "left" ? -300 : 300;
-      current.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    }
-  };
 
   return (
     <div className={styles.section}>
       <div className={styles.header}>
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <Button
-          variant="contained"
+          variant="text"
           color="primary"
-          onClick={handleToggle}
-          sx={{
-            fontSize: "0.85rem",
-            textTransform: "none",
-           
-            backgroundColor: theme.palette.primary.main,
-            "&:hover": {
-              backgroundColor: theme.palette.primary.dark,
-            },
-          }}
+          onClick={() => setShowAll((prev) => !prev)}
         >
-          {showAll ? "Collapse" : "Show all"}
+          {showAll ? "Collapse" : "Show All"}
         </Button>
       </div>
 
-      <div className={styles.wrapper}>
-        {!showAll && (
-          <button className={styles.arrow} onClick={() => scroll("left")}>
-            <ArrowBackIosNewIcon />
-          </button>
-        )}
-
-        <div
-          ref={scrollRef}
-          className={showAll ? styles.cardGrid : styles.carousel}
-        >
+      {showAll ? (
+        <div className={styles.grid}>
           {data.map((item) => (
             <AlbumCard
               key={item.id}
@@ -64,13 +34,31 @@ function AlbumSection({ title, data }) {
             />
           ))}
         </div>
-
-        {!showAll && (
-          <button className={styles.arrow} onClick={() => scroll("right")}>
-            <ArrowForwardIosIcon />
-          </button>
-        )}
-      </div>
+      ) : (
+        <Swiper
+          modules={[Navigation]}
+          navigation
+          spaceBetween={16}
+          
+          breakpoints={{
+            320: { slidesPerView: 2 },
+            600: { slidesPerView: 3 },
+            960: { slidesPerView: 6 },
+            1280: { slidesPerView: 7 },
+          }}
+          style={{ padding: "0 40px" }}
+        >
+          {data.map((item) => (
+            <SwiperSlide key={item.id}>
+              <AlbumCard
+                title={item.title}
+                follows={item.follows}
+                backgroundImage={item.image}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      )}
     </div>
   );
 }
