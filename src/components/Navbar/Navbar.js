@@ -18,7 +18,10 @@ function Navbar({ searchData }) {
         placeholder="Search a song of your choice"
         searchData={searchData}
       />
-      <Button sx={{ backgroundColor : "#121212"}}>Give Feedback</Button>
+      <Button sx={{ backgroundColor : "#121212",
+         height: "48px",
+         alignSelf: "centre"
+      }}>Give Feedback</Button>
     </nav>
   );
 }

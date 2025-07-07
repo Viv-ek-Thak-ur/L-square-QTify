@@ -1,42 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./search.module.css";
 import { ReactComponent as SearchIcon } from "../../assets/search-icon.svg";
 
+function Search({ placeholder }) {
+  const [isVisible, setIsVisible] = useState(false);
 
-
-
-
-
-
-function Search({ searchData, placeholder }) {
-
+  const toggleSearch = (e) => {
+    e.preventDefault();
+    setIsVisible((prev) => !prev);
+  };
 
   return (
-    <div style={{ position: "relative" }}>
+    <div className={styles.searchContainer}>
       <form
-        className={styles.wrapper}
+        className={`${styles.wrapper} ${isVisible ? styles.show : ""}`}
         onSubmit={(e) => {
+          e.preventDefault();
           console.log("submitted");
         }}
       >
-        <div>
-          <input
-            name="album"
-            className={styles.search}
-            placeholder={placeholder}
-            required
-            
-          />
-        </div>
-        <div>
-          <button className={styles.searchButton} type="submit">
-            <SearchIcon />
-          </button>
-        </div>
+        <input
+          name="album"
+          className={styles.search}
+          placeholder={placeholder}
+          required
+        />
+        <button className={styles.searchButton} onClick={toggleSearch} type="button">
+          <SearchIcon />
+        </button>
       </form>
-      
-        
-      
     </div>
   );
 }

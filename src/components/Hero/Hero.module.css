@@ -1,9 +1,39 @@
 .hero {
   background-color: var(--color-black);
-  height: 270px;
+  height: auto;
+  min-height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 30px;
+  padding: 32px 16px;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive for tablets and mobiles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 24px 12px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero img {
+    width: 70%;
+    margin-top: 16px;
+  }
 }
