@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline, Typography, Box } from "@mui/material";
 import Hero from './components/Hero/Hero';
@@ -9,8 +9,11 @@ import { BrowserRouter } from "react-router-dom";
 import AlbumCard from './components/AlbumCard/AlbumCard';
 import AlbumSection from './components/AlbumSection/AlbumSection';
 import SongSection from './components/SongSection/SongSection';
-import topAlbum from '../src/data/album.json'
-import newAlbum from '../src/data/songs.json'
+import axios from "axios";
+
+
+
+
 
 const theme = createTheme({
    typography: {
@@ -30,6 +33,29 @@ const theme = createTheme({
 })
 
 function App(){
+  const [topAlbums , setTopAlbums] = useState([]);
+  const [newAlbums , setNewAlbums] = useState([]);
+  const [showAllTop, setShowAllTop] = useState(false);
+  const [showAllNew, setShowAllNew] = useState(false);
+
+useEffect(()=>{
+  async function fetchAlbums(){
+    try{
+      const [topRes, newRes] = await Promise.all([
+          axios.get("https://qtify-backend-labs.crio.do/albums/top"),
+          axios.get("https://qtify-backend-labs.crio.do/albums/new"),
+        ]);
+        setTopAlbums(topRes.data);
+        setNewAlbums(newRes.data);
+
+    }catch(e){
+       console.e("Failed to fetch Albums : Error")
+
+    }
+  }
+  fetchAlbums();
+},[])
+
   return(
     <>
     <ThemeProvider theme={theme}>
@@ -40,9 +66,18 @@ function App(){
       <Search/>
     </Navbar>
     <Hero/>
-    {/* <AlbumSection title="Top Album" data={topAlbum}/> */}
-    {/* <AlbumSection title="New Album" data={newAlbum}/> */}
-    {/* <SongSection songsData={topAlbum}/> */}
+    <AlbumSection title="Top Albums"
+        data={topAlbums}
+        isGrid={showAllTop}
+        onShowAll={() => setShowAllTop(true)}
+        />
+    <AlbumSection 
+        title="New Album" 
+        data={newAlbums} 
+        isGrid={showAllNew}
+        onShowAll={() => setShowAllNew(true)}
+        />
+    {/* <SongSection songsData={topAlbums}/> */}
     </BrowserRouter>
     </ThemeProvider>
     </>
